@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form element</title>
+</head>
+<body>
+ <form action="#" method="post" target="self">
+    <fieldset>
+        <legend >PERSONAL INFORMATION</legend>
+         <label for="fname">First Name</label><br>
+     <input type="text"Id="fname"
+     name="First Name"
+     placeholder ="Enter Your Name" Required><br><br>
+     
+     <label for="lname">Last Name</labe><br>
+     <input type="text" Id="lname"
+     name="Last Name"
+     placeholder ="Enter your name" Required><br><br>
+     
+     <label for="sname">surname</label><br>
+     <input type="text" Id="sname"
+     name="surname" 
+     placeholder ="Enter your name"><br><br>
+     
+     <label for="pnumber">phone number</label><br>
+     <input type="tel" Id="pnumber" 
+     name="phone number" 
+     placeholder ="+234...."><br><br>
+     
+     <label for="email">E-Mail</label><br>
+     <input type="email" Id="email"
+     name="E-Mail"
+      placeholder ="eg ade.gmail.com"><br><br>
+      
+      <label for="psw">Password</label><br>
+      <input type="password" Id="psw"name="Password"
+      placeholder="At least 8 characters"
+      pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*0-9)(?=.*[&%#@+]).{8,}" title="must contain a letter (uppercase and lowercase),a number,a symbol,and at least 8 character"><br><br>
+      
+        <label for="gender">Gender</label><br>
+      <label for="Male"> Male</label>
+      <input type="radio" Id="male" 
+      Name="Male" value="male">
+      
+      <label for="female">Female</label>
+      <input type="radio" Id="Female"
+      name="Female" value ="female" checked><br><br><br>
+      
+      <label for="age">age</label><br>
+      <input type="number" Id="age" name="age"
+      min="18" max="50">
+     </fieldset> <br><br>
+   
+   <fieldset>  
+       <legend >FUN QUESTIONS</legend>
+    <label for="dob">When is your birthday ?</label><br>
+      <input type ="date" id="dob" 
+      name="Date of Birth"> <br><br>
+      
+      <label for="continent">Which Continent is your home town located ?</label><br>
+      <select Id="continent" name="continent">
+          <option for=""></option>
+          <option for="Africa">Africa</option>
+          <option for="Australia">Australia</option>
+          <option for="asia">Asia</option>
+       <option for="antarctica">Antarctica</option>
+       <option for="europe">Europe</option>
+  <option for="North America">North America</option>
+ <option for="South American">South America</option>
+           </select><br><br>
+           
+           <label for="weather">What is ur Favourite       Weather ?</label><br>
+           <label for="sunny">Sunny ☀️</label>
+           <input type="checkbox"        Id="sunny"name="weather" value ="sunny"
+           <label for="raining">Raining 🌧️</label>
+           <input type="checkbox" Id="raining" name="weather" value ="raining"
+           <label for="snowing">Snowing ❄️</label>
+           <input type="checkbox"Id="snowing"name="weather" value ="snowing"><br><br><br>
+           
+           <label for="favorite color">Favourite Color</label><br>
+           <input type="color" Id="favorite color"
+           name="fav color" ><br><br>
+           
+           <label for="comment">What did You Enjoy During The Day</label>
+           <textarea type="comment"Id="comment" placeholder ="leave your comment here..." cols="30" rows="5"></textarea>
+           </fieldset><br><br>
+      
+      <button type="submit"><b>submit</b></button><br><br>
+ </form>
+</body>
+</html>
